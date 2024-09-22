@@ -37,14 +37,14 @@ Proyek ini adalah REST API sederhana yang dibuat dengan menggunakan NestJS dan K
 
 ## Endpoint
 - Product
-POST /products: Tambah produk baru
-GET /products: Dapatkan daftar produk
-GET /products/: Dapatkan detail produk berdasarkan ID
-PUT /products/: Update produk berdasarkan ID
-DELETE /products/: Hapus produk berdasarkan ID
+  - POST /products: Tambah produk baru
+  - GET /products: Dapatkan daftar produk
+  - GET /products/: Dapatkan detail produk berdasarkan ID
+  - PUT /products/: Update produk berdasarkan ID
+  - DELETE /products/: Hapus produk berdasarkan ID
 
 -Order
-POST /orders: Buat pesanan baru
-GET /orders: Dapatkan daftar pesanan
-GET /orders/: Dapatkan detail pesanan berdasarkan ID
-DELETE /orders/: Hapus pesanan berdasarkan ID
+  - POST /orders: Buat pesanan baru
+  - GET /orders: Dapatkan daftar pesanan
+  - GET /orders/: Dapatkan detail pesanan berdasarkan ID
+  - DELETE /orders/: Hapus pesanan berdasarkan ID
