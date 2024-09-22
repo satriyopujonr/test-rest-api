@@ -30,9 +30,20 @@ Proyek ini adalah REST API sederhana yang dibuat dengan menggunakan NestJS dan K
    git clone https://github.com/satriyopujonr/test-rest-api
 
 2. Buat Database di mysql
-3. Setup .Env nya, contoh ada di .env example
+3. Setup .env nya, contoh ada di .env.example
 4. Jalankan migrasinya dengan command ``` pnpm run migrate ```
 5. Jalankan aplikasinya dengan command ``` pnpm start:dev ```
+
+
+## Menggunakan Docker
+Pastikan Anda telah menginstal Docker dan Docker Compose di mesin Anda.
+
+- Buat Database di mysql dengan nama test-rest-api
+- Jalankan perintah berikut untuk membangun dan menjalankan aplikasi:
+
+```docker-compose up --build```
+
+- Akses API melalui http://localhost:9000.
 
 
 ## Endpoint
