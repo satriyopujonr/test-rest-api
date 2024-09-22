@@ -55,7 +55,7 @@ Pastikan Anda telah menginstal Docker dan Docker Compose di mesin Anda.
   - PUT /products/: Update produk berdasarkan ID
   - DELETE /products/: Hapus produk berdasarkan ID
 
--Order
+- Order
   - POST /orders: Buat pesanan baru
   - GET /orders: Dapatkan daftar pesanan
   - GET /orders/: Dapatkan detail pesanan berdasarkan ID
