@@ -7,8 +7,8 @@ exports.up = function (knex) {
     table.increments('id').primary(); // ID sebagai primary key
     table.string('name').notNullable(); // Nama produk
     table.integer('price').notNullable(); // Harga produk
-    table.integer('stock').notNullable(); // Stok produk
-    table.integer('sold').notNullable(); // Terjual
+    table.integer('stock').notNullable().defaultTo(0); // Stok produk, default 0
+    table.integer('sold').notNullable().defaultTo(0); // Terjual, default 0
     table.timestamps(true, true); // created_at dan updated_at
   });
 };
