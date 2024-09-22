@@ -8,9 +8,9 @@ const appVariables = {
 
 const databaseVariables = {
   DB_HOST: z.string(),
-  DB_USER: z.string(),
   DB_PORT: z.string().default('3306'),
-  DB_PASS: z.string(),
+  DB_USERNAME: z.string(),
+  DB_PASSWORD: z.string(),
   DB_NAME: z.string(),
 };
 
