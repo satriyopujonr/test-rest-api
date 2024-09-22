@@ -39,6 +39,7 @@ Proyek ini adalah REST API sederhana yang dibuat dengan menggunakan NestJS dan K
 Pastikan Anda telah menginstal Docker dan Docker Compose di mesin Anda.
 
 - Buat Database di mysql dengan nama test-rest-api
+- Setup .env nya sesuai koneksi ke mysql anda
 - Jalankan perintah berikut untuk membangun dan menjalankan aplikasi:
 
 ```docker-compose up --build```
