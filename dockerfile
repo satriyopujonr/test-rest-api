@@ -10,9 +10,6 @@ COPY package*.json ./
 # Menginstall dependencies
 RUN npm install
 
-# Menyalin semua file source
-COPY . .
-
 # Mengekspos port aplikasi
 EXPOSE 9000
 
