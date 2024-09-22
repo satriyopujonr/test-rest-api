@@ -1,17 +1,17 @@
-# Menggunakan image Node.js
-FROM node:16
+# Dockerfile
 
-# Set working directory
+# Stage 1: Build the application
+FROM node:18 AS builder
 WORKDIR /usr/src/app
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install
+COPY . .
+RUN pnpm build
 
-# Menyalin package.json dan package-lock.json
-COPY package*.json ./
-
-# Menginstall dependencies
-RUN npm install
-
-# Mengekspos port aplikasi
-EXPOSE 9000
-
-# Menjalankan aplikasi
-CMD ["npm", "run", "start:prod"]
+# Stage 2: Run the application
+FROM node:18
+WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app/dist ./dist
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install --production
+CMD ["node", "dist/main"]
